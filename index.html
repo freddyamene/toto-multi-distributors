@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toto Multi Distributors | Lae, PNG</title>
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0d9488">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Toto Multi">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        .product-card { transition: all 0.3s ease; }
+        .product-card:hover { transform: translateY(-4px); }
+        
+        .bottom-nav { display: none; }
+        @media (max-width: 768px) {
+            .bottom-nav { display: flex; }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 pb-20 md:pb-0">
+    
+    <!-- Top Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b">
+        <div class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="logo.png" alt="Toto Multi Distributors" class="h-11 w-auto">
+                <div>
+                    <div class="font-bold text-2xl text-teal-700 tracking-tight">Toto Multi</div>
+                    <div class="text-xs text-gray-500 -mt-1">Distributors</div>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#home" class="hover:text-teal-600">Home</a>
+                <a href="#products" class="hover:text-teal-600">Products</a>
+                <a href="#services" class="hover:text-teal-600">Services</a>
+                <a href="#clients" class="hover:text-teal-600">Clients</a>
+                <a href="#contact" class="hover:text-teal-600">Contact</a>
+            </div>
+            
+            <button onclick="installApp()" 
+                    class="hidden md:flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-2xl text-sm font-semibold">
+                <i class="fas fa-download"></i>
+                <span>Install App</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="bg-gradient-to-br from-teal-700 to-teal-800 text-white py-16 px-5">
+        <div class="max-w-3xl mx-auto text-center">
+            <div class="inline-block px-4 py-1 bg-white/20 rounded-full text-sm mb-4">EST. 2017 • LAE, PNG</div>
+            <h1 class="text-5xl font-bold tracking-tighter mb-4">Quality Supplies.<br>Local Pride.</h1>
+            <p class="text-xl text-white/90 mb-8">Stationery • Furniture • IT • Cleaning Products • PPE</p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#products" class="bg-white text-teal-700 font-semibold px-8 py-4 rounded-2xl text-lg">Browse Products</a>
+                <a href="https://wa.me/67579928666" class="flex items-center justify-center gap-2 border-2 border-white text-white font-semibold px-8 py-4 rounded-2xl text-lg">
+                    <i class="fab fa-whatsapp text-2xl"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar -->
+    <div class="bg-white py-3 border-b text-center text-sm text-gray-600">
+        <div class="max-w-5xl mx-auto px-5 flex flex-wrap justify-center gap-x-8 gap-y-1">
+            <span>✓ 100% PNG Owned</span>
+            <span>✓ Trusted by Hospitals & Mining Companies</span>
+            <span>✓ Fast Delivery in Lae & Nationwide</span>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section id="products" class="max-w-7xl mx-auto px-5 py-16">
+        <div class="flex justify-between items-end mb-8">
+            <div>
+                <h2 class="text-4xl font-bold text-gray-900">Our Products</h2>
+                <p class="text-gray-600 mt-1">Quality you can trust</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+            <div class="product-card bg-white rounded-3xl p-5 border">
+                <div class="text-5xl mb-4">📚</div>
+                <h3 class="font-semibold text-xl mb-1">Stationery & Office Supplies</h3>
+                <p class="text-sm text-gray-600">Pens, paper, files, notebooks & more</p>
+            </div>
+            <div class="product-card bg-white rounded-3xl p-5 border">
+                <div class="text-5xl mb-4">🖋️</div>
+                <h3 class="font-semibold text-xl mb-1">Inks, Toners & Printers</h3>
+                <p class="text-sm text-gray-600">HP, Canon, Brother & compatible</p>
+            </div>
+            <div class="product-card bg-white rounded-3xl p-5 border">
+                <div class="text-5xl mb-4">🪑</div>
+                <h3 class="font-semibold text-xl mb-1">Office & School Furniture</h3>
+                <p class="text-sm text-gray-600">Desks, chairs, cabinets & classroom sets</p>
+            </div>
+            <div class="product-card bg-white rounded-3xl p-5 border">
+                <div class="text-5xl mb-4">🧪</div>
+                <h3 class="font-semibold text-xl mb-1">Cleaning Chemicals & PPE</h3>
+                <p class="text-sm text-gray-600">Disinfectants, safety gear & consumables</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-white py-16 px-5 border-t">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-10">Our Services</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 border rounded-3xl">
+                    <i class="fas fa-truck text-4xl text-teal-600 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Reliable Supply & Delivery</h3>
+                    <p class="text-gray-600">Fast and dependable delivery across Lae and Papua New Guinea.</p>
+                </div>
+                <div class="p-6 border rounded-3xl">
+                    <i class="fas fa-handshake text-4xl text-teal-600 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Bulk & Wholesale Orders</h3>
+                    <p class="text-gray-600">Competitive pricing for government, schools, hospitals and businesses.</p>
+                </div>
+                <div class="p-6 border rounded-3xl">
+                    <i class="fas fa-headset text-4xl text-teal-600 mb-4"></i>
+                    <h3 class="font-bold text-xl mb-2">Personalized Support</h3>
+                    <p class="text-gray-600">Dedicated service from our professional team.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="max-w-7xl mx-auto px-5 py-16">
+        <h2 class="text-4xl font-bold text-center mb-10">Trusted By Leading Organisations</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+            <div class="bg-white p-5 rounded-2xl border">Angau Memorial Hospital</div>
+            <div class="bg-white p-5 rounded-2xl border">Harmony Gold (PNG)</div>
+            <div class="bg-white p-5 rounded-2xl border">PNG University of Technology</div>
+            <div class="bg-white p-5 rounded-2xl border">Paradise Foods Limited</div>
+            <div class="bg-white p-5 rounded-2xl border">Water PNG</div>
+            <div class="bg-white p-5 rounded-2xl border">Consort Express Lines</div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-teal-700 text-white py-16 px-5">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-4">Let's Work Together</h2>
+            <p class="text-xl mb-8 text-white/90">Contact us today for quotes and orders</p>
+            
+            <div class="bg-white/10 rounded-3xl p-8 text-left max-w-md mx-auto">
+                <div class="space-y-4">
+                    <div><strong>Phone:</strong> (+675) 472 9472</div>
+                    <div><strong>Mobile / WhatsApp:</strong> (+675) 799 28666</div>
+                    <div><strong>Email:</strong> totomultidistributors@gmail.com</div>
+                    <div><strong>Location:</strong> Top Town, 8th Street, Luxuria Business Centre, Lae</div>
+                </div>
+            </div>
+            
+            <a href="https://wa.me/67579928666" 
+               class="mt-8 inline-flex items-center gap-3 bg-white text-teal-700 font-bold px-10 py-4 rounded-2xl text-lg">
+                <i class="fab fa-whatsapp text-2xl"></i> Chat on WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Bottom Navigation (Mobile App Style) -->
+    <div class="bottom-nav fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around py-3 text-xs z-50">
+        <a href="#home" class="flex flex-col items-center text-teal-600"><i class="fas fa-home text-xl mb-0.5"></i> Home</a>
+        <a href="#products" class="flex flex-col items-center"><i class="fas fa-box text-xl mb-0.5"></i> Products</a>
+        <a href="#services" class="flex flex-col items-center"><i class="fas fa-handshake text-xl mb-0.5"></i> Services</a>
+        <a href="#contact" class="flex flex-col items-center"><i class="fas fa-phone text-xl mb-0.5"></i> Contact</a>
+    </div>
+
+    <!-- Install Banner -->
+    <div id="install-banner" class="hidden fixed bottom-20 md:bottom-6 left-4 right-4 md:left-auto md:right-6 bg-white shadow-xl border rounded-3xl p-4 max-w-sm z-50">
+        <div class="flex gap-4 items-start">
+            <div class="flex-1">
+                <div class="font-semibold">Install Toto Multi App</div>
+                <div class="text-sm text-gray-600">Get quick access on your home screen</div>
+            </div>
+            <div class="flex gap-2">
+                <button onclick="installApp()" class="bg-teal-600 text-white px-5 py-2 rounded-2xl text-sm font-semibold">Install</button>
+                <button onclick="hideInstallBanner()" class="text-gray-400 px-3">✕</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Register Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then(() => console.log('Service Worker ready'))
+                    .catch(err => console.log(err));
+            });
+        }
+
+        // PWA Install
+        let deferredPrompt;
+        const installBanner = document.getElementById('install-banner');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            if (installBanner) installBanner.classList.remove('hidden');
+        });
+
+        function installApp() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                deferredPrompt.userChoice.then(() => {
+                    deferredPrompt = null;
+                    if (installBanner) installBanner.classList.add('hidden');
+                });
+            } else {
+                alert("On your phone: Tap Share → 'Add to Home Screen'");
+            }
+        }
+
+        function hideInstallBanner() {
+            if (installBanner) installBanner.classList.add('hidden');
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Show install prompt after delay on mobile
+        setTimeout(() => {
+            if (installBanner && installBanner.classList.contains('hidden') && window.innerWidth < 768) {
+                installBanner.classList.remove('hidden');
+            }
+        }, 10000);
+    </script>
+</body>
+</html>

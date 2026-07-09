@@ -1,0 +1,24 @@
+{
+  "name": "Toto Multi Distributors",
+  "short_name": "Toto Multi",
+  "description": "Quality Office Supplies, Furniture, IT & Cleaning Products in Lae, PNG",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d9488",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
